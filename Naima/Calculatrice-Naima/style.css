@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+
+}
+
+
+table{  margin: auto;}
+
+
+.title{
+    font-size: 25px;
+    font-style: italic;
+    font-family: sans-serif;
+    color: black;
+  }
+  #case{
+      height: 37px;
+      width: 200px;
+      border: 2px solid firebrick;
+      border-radius: 10px;
+      text-align: end;
+      font: 1em sans-serif;
+  }
+
+  .number{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      color:black;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color:firebrick;
+      
+  }
+  .number:hover {
+    background-color: wheat;
+  }
+
+  .operator{
+      height: 50px;
+      width: 50px;
+      font-size: 25px;
+      color:gray;
+      border: 2px solid firebrick;
+      border-radius: 10px;
+      background-color:wheat;
+  }
+  .operator:hover{
+      background-color:firebrick;
+  }
