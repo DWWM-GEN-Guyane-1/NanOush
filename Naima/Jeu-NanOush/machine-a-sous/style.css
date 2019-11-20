@@ -7,7 +7,7 @@ body{
 }
 main{
     border-radius: 5px;
-    background-color: #EF5350;
+    background-color:green;
     margin-top: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -22,8 +22,8 @@ section#status{
     padding-bottom: 25px;
     border-radius: 5px;
     text-align: center;
-    background-color: #37474F;
-    color: #FFFFFF;
+    background-color: orangered;
+    color: black;
     font-size: 25px;
     font-family: 'Sans-Serif', monospace;
 }
@@ -37,13 +37,25 @@ section#Gira{
     padding-bottom: 25px;
     border-radius: 5px;
     text-align: center;
-    background-color: #AB47BC;
-    color: #FFFFFF;
+    background-color: yellow;
+    color: black;
     font-size: 25px;
 }
 section#Gira:hover{
-    background-color: #BA68C8;
+    background-color: orange;
 }
+
+section#options{
+        margin-top: 20px;
+        padding-top: 5px;
+        border-radius: 5px;
+        background-color: #C62828;
+        color: #FFFFFF;
+    }
+    .option{
+        padding-left: 5px;
+}
+
 #slot1, #slot2, #slot3{
     display: inline-block;
     margin-top: 5px;
