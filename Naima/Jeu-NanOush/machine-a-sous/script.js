@@ -12,7 +12,7 @@ function doSlot(){
     var i2 = 0;
     var i3 = 0;
     
-    status.innerHTML = "SPINNING"
+    status.innerHTML = "Machine a Baba Tia'Na"
     slot1 = setInterval(spin1, 50);
     slot2 = setInterval(spin2, 50);
     slot3 = setInterval(spin3, 50);

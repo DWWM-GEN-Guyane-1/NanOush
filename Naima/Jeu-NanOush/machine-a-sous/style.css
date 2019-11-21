@@ -31,9 +31,13 @@ section#Sous{
     border-radius: 15px;
     background-color: #FAFAFA;
 }
-section#Gira{
-    margin-top: 25px;
+#Gira{
+    margin-top: 15px;
+    margin-left:220px;
+    margin-right: auto;
+    margin-bottom: 25px;
     padding-top: 25px;
+
     padding-bottom: 25px;
     border-radius: 5px;
     text-align: center;
@@ -41,7 +45,7 @@ section#Gira{
     color: black;
     font-size: 25px;
 }
-section#Gira:hover{
+#Gira:hover{
     background-color: orange;
 }
 
@@ -86,3 +90,4 @@ section#options{
 .a7{
     background-image: url("images/caca.jpeg");
 }
+
