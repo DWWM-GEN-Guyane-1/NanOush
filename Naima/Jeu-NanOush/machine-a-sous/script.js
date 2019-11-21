@@ -1,8 +1,10 @@
 var doing = false;
 let status = document.getElementById("status")
 var info = true;
+
+
 function doSlot(){
-    if (doing){return null;}
+    if (doing)
     doing = true;
     var numChanges = randomInt(1,4)*7
     var numeberSlot1 = numChanges+2*7+randomInt(1,7)
