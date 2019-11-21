@@ -6,7 +6,7 @@ function doSlot(){
     doing = true;
     var numChanges = randomInt(1,4)*7
     var numeberSlot1 = numChanges+randomInt(1,7)
-    var numeberSlot2 = numChanges+27+randomInt(1,7)
+    var numeberSlot2 = numChanges+2*7+randomInt(1,7)
     var numeberSlot3 = numChanges+4*7+randomInt(1,7)
     var i1 = 0;
     var i2 = 0;
@@ -58,11 +58,7 @@ function spin2(){
         if (slotTile.className=="a7"){
             slotTile.className = "a0";
         }
-        sound++;
-        if (sound==spin.length){
-            sound=0;
-        }
-        spin[sound].play();
+        
         slotTile.className = "a"+(parseInt(slotTile.className.substring(1))+1)
     }
 }
