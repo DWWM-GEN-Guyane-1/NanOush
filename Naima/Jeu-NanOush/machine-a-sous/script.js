@@ -78,10 +78,10 @@ function testWin(){
         (slot1 == slot2 && slot1 == "a7") 
         (slot1 == slot3 && slot1 == "a7") 
         (slot2 == slot3 && slot2 == "a7") ) && !(slot1 == slot2 && slot2 == slot3 && slot1=="a7")){
-        status.innerHTML = "YOU WIN!";
+        status.innerHTML = "GAGNER!";
         win.play();
     }else{
-        status.innerHTML = "YOU LOSE!"
+        status.innerHTML = "LOOSER!"
         lose.play();
     }
     doing = false;
