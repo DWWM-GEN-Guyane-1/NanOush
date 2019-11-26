@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+   <!-- here is the star of the show - the Vue library! -->
+   <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+
+   <!--Load Kendo styles -->
+   <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.913/styles/kendo.common.min.css"/>
+   <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.913/styles/kendo.default.min.css"/>
+
+   
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="https://kendo.cdn.telerik.com/2017.3.913/js/kendo.all.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
+   
+   <script src="https://unpkg.com/@progress/kendo-dropdowns-vue-wrapper/dist/cdn/kendo-dropdowns-vue-wrapper.min.js"></script>
+
+   <script>
+        
+        var action = [ "Go", "Stay"];
+        var result = [ "It will be double", "There will be trouble" ];
+        var problem = [ "This indecision's bugging me", "Esta indecision me molesta"];
+        var option = [ "Mick", "Joe and Joe"];
+        // when life is settled, load up the fun stuff
+        document.addEventListener('DOMContentLoaded', function () {
+            new Vue({
+                el: '#sg1',
+                // define data - initial display text and set the text on the button
+                data: {
+                    m1: "You got to let me know",
+                    btext: action[0]
+                },
+                // define the methods - alternate between the two values
+                methods: {
+                    staygo: function () {
+                        var sel = ( this.btext == action[0] ) ? sel = 1 : sel = 0;
+                            this.m1 = result[sel];
+                            this.btext = action[sel];
+                    }
+                }
+            })
+            new Vue({
+                el: "#sg2",
+                // data is the lyric line and the two options for the dropdownlist
+                data: {
+                        m2: problem[0],
+                        singerOptions: [
+                            { text: option[0], value: '0' },
+                            { text: option[1], value: '1' }
+                        ]
+                },
+                // and the method here just updates the text based on the singer selection
+                methods: {
+                  onChange: function(e) {
+                    this.m2 = problem[e.sender.value()];
+                  }
+                }
+            })
+        })
+   </script>
+</head>
+<body>
+    
+ 
+   <div id="sg1">
+    <p>{{ m1 }}</p>
+    <p><button v-on:click="staygo">{{ btext }}</button></p>
+</div>
+
+<hr/>
+
+
+<div id="sg2" class="vue-app">
+    <p>{{ m2 }}</p>
+    <h4>Singer:</h4>
+    <kendo-dropdownlist :data-source="singerOptions"
+                        :data-text-field="'text'"
+                        :data-value-field="'value'"
+                        @change="onChange">
+    </kendo-dropdownlist>
+</div>
+</body>
+</html>
