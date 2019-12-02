@@ -9,9 +9,8 @@
 
     <?php
     
-    echo 'Bonjour'
-      $prenom = 'Naïma';  // Type string (chaine de caractères)
-      $nom = "CIMPER";    // Type string (chaine de caractères)
+    echo  
+      $nom = 'CIMPER';    // Type string (chaine de caractères)
     ?>
 </body>
 </html>
