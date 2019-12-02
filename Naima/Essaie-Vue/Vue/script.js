@@ -1,8 +1,9 @@
-var problem = [ "Qui est la plus chiante?"];
+var problem = [ "Qui est la plus chiante?", "Votre choix"];
 var option = [ "Kath", "Lucie","Tia","Sonia"];
 
 document.addEventListener('DOMContentLoaded', function () {
-new Vue({
+
+    new Vue({
         el: "#sg1",
         // data is the lyric line and the two options for the dropdownlist
         data: {
@@ -17,7 +18,7 @@ new Vue({
         // and the method here just updates the text based on the singer selection
         methods: {
           onChange: function(e) {
-            this.m2 = problem[e.sender.value()];
+            this.m1 = problem[e.sender.value()];
           }
         }
     })
