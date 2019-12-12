@@ -9,14 +9,14 @@
     <?php
 
 $string = 'Chaine';
-$integer= (int)1995;
+$int= 1995;
 $float  = 2.4;
 $boolean = true;
 
 echo $string;
 echo '<br/>';
 
-echo $integer;
+echo $int;
 echo'<br/>';
 
 echo $float;

@@ -10,6 +10,7 @@
     <?php
  
  $nom = 'CIMPER';
+ 
  $identite = '';
  
  $identite = 'Bonjour' . $nom . 'Comment vas-tu?';
