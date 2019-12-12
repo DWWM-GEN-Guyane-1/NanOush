@@ -90,6 +90,34 @@
       <img src="Images/mario.jpeg">
       </div>
     </div>
+    <div class="container">
+<div class="row py-5">
+      <div class="col-sm-6">
+          <strong>Death to the Stock Photo: </BR>
+          Special Thanks </strong></BR>
+          <p> A special thanks to <a href="page2.htm" target="_self">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+      </div>
+      
+	  <div class="col-sm-6">
+      <stong>3D Device MOckups </BR>
+      by PSDCovers</strong></BR>
+      <p>Turn</p>
+      </div>
+    </div>
+    <div class="container">
+<div class="row py-5">
+      <div class="col-sm-6">
+          <strong>Death to the Stock Photo: </BR>
+          Special Thanks </strong></BR>
+          <p> A special thanks to <a href="page2.htm" target="_self">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+      </div>
+      
+	  <div class="col-sm-6">
+      <stong>3D Device MOckups </BR>
+      by PSDCovers</strong></BR>
+      <p>Turn</p>
+      </div>
+    </div>
 </main>
 <script type="text/javascript" src="script.js"></script>
 </body>
